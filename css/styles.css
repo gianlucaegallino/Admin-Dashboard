@@ -1,50 +1,157 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../media/fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../media/fonts/Roboto-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../media/fonts/Roboto-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../media/fonts/Roboto-Black.ttf);
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 3.75fr;
+  grid-template-rows: 1fr 4.75fr;
+  width: 100vw;
+  height: 100vh;
+  font-family: Roboto, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+header {
+  background-color: #fefeff;
+  grid-column: 2 / 3;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 0.6fr;
+  grid-template-rows: 1fr 1fr;
+}
+
 /* Removes link decorations */
 a:link,
 a:visited {
   text-decoration: none;
 }
 .sidebar {
-    background-color: #1993d5;
-    grid-column: 1/2;
-    grid-row: 1 /3;
+  height: 100vh;
+  background-color: #1993d5;
+  grid-column: 1/2;
+  grid-row: 1 /3;
 }
-.sidebarblock{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-auto-rows: 1fr;
+.sidebarBlock {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 1.3rem;
+  margin-top: 3rem;
 }
-.sidebarItem{
-    display: grid;
-    grid-template-columns: 1fr 2.5fr;
-    grid-template-rows: 1fr;
-    color: #fefeff;
+.sidebarItem {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: 1fr;
+  color: #fefeff;
 }
 
 .sidebarSvg {
-    place-self: center;
+  place-self: center;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.MainLogo {
+  place-self: center;
+  width: 3rem;
+  height: 3rem;
 }
 
-header {
-    background-color: #fefeff;
-    grid-column: 2 / 3;
-    grid-row: 1/2;
-    display: grid;
-    grid-template-columns: 1fr 0.60fr;
-    grid-template-rows: 1fr 1fr;
+.sideText {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
-
 .main-content {
-    background-color: #e2e9f1;
-    grid-row: 2/3;
-    grid-column: 2/3;
+  background-color: #e2e9f1;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 20px;
 }
 
-body {
-    display: grid;
-    grid-template-columns: 1fr 3.75fr;
-    grid-template-rows: 1fr 4.75fr;
-    width: 100vw;
-    height: 100vh;
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+.yourProjects {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr;
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+
+.pfp {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  grid-row: 1/3;
+  grid-column: 1/2;
+  place-self: center;
+}
+.line1 {
+  grid-row: 1/2;
+}
+.line2 {
+  grid-row: 2/3;
+}
+.line1,
+.line2 {
+  grid-column: 2/3;
+}
+.namecard {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 7fr;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.card,
+.card2,
+.card3 {
+  background-color: #fefeff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.logoTitle {
+  margin-bottom: 0px;
+}
+
+/* Filter for turning black SVGs into white.*/
+.MakeItWhite {
+  filter: brightness(0) saturate(100%) invert(89%) sepia(13%) saturate(538%)
+    hue-rotate(201deg) brightness(108%) contrast(105%);
 }
