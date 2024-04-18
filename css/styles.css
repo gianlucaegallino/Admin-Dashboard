@@ -46,6 +46,18 @@ header {
   grid-template-rows: 1fr 1fr;
 }
 
+button {
+    border: none;
+    background-color: #1993d5;
+    color: #fefeff;
+    padding: 0.5rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
 /* Removes link decorations */
 a:link,
 a:visited {
@@ -125,6 +137,8 @@ a:visited {
 .line1,
 .line2 {
   grid-column: 2/3;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .namecard {
   display: grid;
