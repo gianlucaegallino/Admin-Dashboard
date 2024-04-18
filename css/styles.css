@@ -43,7 +43,7 @@ header {
   grid-row: 1/2;
   display: grid;
   grid-template-columns: 1fr 0.6fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr;
 }
 
 button {
@@ -159,6 +159,7 @@ a:visited {
   background-color: #fefeff;
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 0.1rem 0.25rem 0.4rem rgb(199, 199, 199);
 }
 
 .logoTitle {
@@ -169,4 +170,8 @@ a:visited {
 .MakeItWhite {
   filter: brightness(0) saturate(100%) invert(89%) sepia(13%) saturate(538%)
     hue-rotate(201deg) brightness(108%) contrast(105%);
+}
+
+.subtleShadow {
+    box-shadow: 0.1rem 0.25rem 0.4rem rgb(199, 199, 199);
 }
