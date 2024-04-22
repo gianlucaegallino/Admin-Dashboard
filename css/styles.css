@@ -93,8 +93,16 @@ a:visited {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-auto-rows: 1fr;
-  gap: 1.3rem;
-  margin-top: 3rem;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.sidebarBlock2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 1.5rem;
+  margin-top: 4.5rem;
 }
 .sidebarItem {
   display: grid;
@@ -102,7 +110,13 @@ a:visited {
   grid-template-rows: 1fr;
   color: #fefeff;
 }
-
+.sidebarMainLogo{
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: 1fr;
+  color: #fefeff;
+  margin-top:10px;
+}
 .svgCenter {
   place-self: center;
   width: 1.5rem;
@@ -117,8 +131,8 @@ a:visited {
 }
 .MainLogo {
   place-self: center;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .sideText {
@@ -250,8 +264,18 @@ a:visited {
 .card {
   border-left: 9px solid rgb(238, 188, 51);
   height: 175px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2rem;
+  gap: 0px;
 }
-
+.mainCardIcons{
+  display: grid;
+  grid-template-columns: repeat(3, 1.5rem);
+  grid-template-rows: 1fr;
+  gap: 20px;
+  justify-content: end;
+}
 .cardContent {
   padding: 0.5rem 0px;
 }
@@ -266,7 +290,9 @@ a:visited {
   grid-auto-rows: 1fr;
 }
 .logoTitle {
-  margin-bottom: 0px;
+  margin: 0px;
+  font-size: 1.75rem;
+  align-self: center;
 }
 hr {
   border-top: 1px solid #e2e9f1;
@@ -307,4 +333,13 @@ hr {
   font-size: 0.85rem;
   color: #7a7a7a;
   margin: 0px;
+}
+.mainCardText>h4{
+  margin: 0px;
+  font-size: 1.05rem;
+}
+.mainCardText>p{
+  margin: 0px;
+  color: #7a7a7a;
+  font-size: 0.975rem;
 }
